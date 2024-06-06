@@ -41,7 +41,6 @@ export const todos = (state = initialState, action) => {
     case LOAD_TODOS_SUCCESS: {
       const { todos } = payload;
       return {
-        ...state,
         isLoading: false,
         data: todos,
       };

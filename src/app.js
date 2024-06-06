@@ -1,11 +1,16 @@
 import React from "react";
-import "./app.css";
 import TodoList from "./todo/todoList";
+import { styled } from "styled-components";
 
+const AppContainer = styled.div`
+  margin: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+`;
 const App = () => (
-  <div className="App">
+  <AppContainer>
     <TodoList />
-  </div>
+  </AppContainer>
 );
 
 // todos={[{ text: "hello" }]}
